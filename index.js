@@ -125,8 +125,9 @@ function convert(x) {
 
 convertBtn.addEventListener("click", function () {
     let inputVal = Number(input.value)
-    convert(inputVal)
-    
+    if (inputVal) {
+      convert(inputVal)
+    }
 })
 
 
