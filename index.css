@@ -8,6 +8,8 @@
     --dark-bottom-background: #1F2937;
     --dark-bottom-box: #273549;
     --dark-bottom-header: #34D399;
+
+    --transition-time: 200ms;
 }
 
 * {
@@ -149,8 +151,8 @@ input .input-error{
 h2,
 .app-bottom,
 .unit-box {
-    transition: background-color 200ms,
-        color 200ms;
+    transition: background-color var(--transition-time),
+        color var(--transition-time);
 }
 /* dark mode styles */
 h2.dark-mode { color: var(--dark-bottom-header); }
